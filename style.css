@@ -1,0 +1,344 @@
+html {
+    font-size: 62,5%;
+    box-sizing: border-box;
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #000;
+    background-color: #fff;
+   
+
+}
+body {
+    margin: 0;
+    padding: 0;
+    background:linear-gradient(to top, rgba(0,0,0,.2),rgba(0,0,0,.4)),url(/Svg/hvas.svg) center no-repeat ;
+    background-size: cover;
+   
+    
+
+}
+svg{
+    width: 20px;
+    height: 20PX;
+}
+/*navbar*/
+aside{
+    width: 8rem;
+    height: 100%;
+    background-color: #eee;
+    position: fixed;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+     z-index: 10;
+}
+.menu-icon{
+    margin-top: rem;
+    cursor: pointer; 
+    
+}
+.line {
+    height: .2rem;
+    width: 2.5rem;
+    background-color:#222 ;
+    margin-bottom: .6rem;
+}
+.line-1,.line-3{
+    width: 1.8rem;
+    transition:width.4s ;
+}
+.menu-icon:hover .line{
+    width: 2.5rem;
+}
+.social-icons-link{
+    list-style: none;
+    padding: 0;
+    height: 25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 15rem;
+   
+    
+
+}
+.social-link{
+    font-size: 2rem;
+    color: rgb(40, 40, 228);
+    transition: 1s;
+    
+
+
+}
+    
+.year{
+    margin-bottom:1.5rem;
+    color:#555;
+    font-size: 1.5rem;
+    margin-top: -1.5rem;
+    
+}
+
+form{
+    position: relative;
+}
+/* hide liste */
+nav {
+    /* background-color: rgb(62, 22, 107); */
+     /* margin-left:8rem ; */
+    position: fixed;
+    left: -32rem;
+
+     width:15rem;
+    background:linear-gradient(to top, rgba(0,0,0,.5),rgba(0,0,0,.7)),url(imge/4.jpg) center 
+    no-repeat;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    flex-direction:column;
+    justify-content: space-between;
+    align-items: center;
+    transition:left .8s cubic-bezier(1,0,0,1) ;
+}
+
+h2{
+  font: size 2rem ;
+  text-align: center;
+}
+.navigation-search-iput{
+    width: 10rem;
+    padding: 1rem,2rem;
+    background-color: rgb(22, 19, 19);
+    border-radius:5rem  ;
+   
+}
+.navigation-search-btn{
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    top: 3px;
+    right:5px;
+    cursor: pointer;
+    
+}
+ul{
+    /* margin-bottom:27rem; */
+    list-style: none;
+    padding: 0;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+li{
+    position: relative;
+}
+a{
+    color: #fff;
+    font-size: 1.6;
+    font-weight: 100;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+a::before {
+    content: "";
+    width: 0rem;
+    height: .1rem;
+    color: rgb(20, 19, 19);
+    position: absolute;
+    top: 1rem;
+    left:-4rem ;
+}
+a::after {
+    content: "";
+    width: 0rem;
+    height: .1rem;
+    color: rgb(20, 19, 19);
+    position: absolute;
+    top: 1rem;
+    right:-4rem ;
+}
+a:hover{
+    color: #531bd8;
+}
+.copyrighte{
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+
+}
+.checkbox:checked~ nav{
+    left: 8rem;
+}
+h1{
+    margin-left:8rem ;
+}
+/* eerste overzicht */
+
+.header-eersteoverzicht{
+    margin-left: 8rem;
+    height:100vh;
+     /* background:linear-gradient(to top, rgba(0,0,0,.2),rgba(0,0,0,.4)),url(imge/hva.jpg) center no-repeat; */
+    background-size: cover;
+}
+/* de brand niet klaar  */
+.brand
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+.heading-brand{
+    color: rgb(15, 12, 12);
+    font-size: 20px;
+}
+.banner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.logo{
+    width: 30rem;
+    height: 3rem;
+}
+.banner-heading{
+    font-size:2.8rem ;
+    color: rgb(15, 1, 1);
+    animation: anim 2s;
+}
+.banner-pragraphe{
+    font-size: 2.5rem;
+    color: #000;
+    animation: anim 1.5s .5s backwards;
+
+}
+.banner-button{
+    width:10rem ;
+    padding: 1.1rem 0 1.1rem 0;
+    font-size: 1.3rem;
+    border: none;
+    border-radius:2rem ;
+    background-color: rgba(138, 108, 248, 0.856);
+    color: rgb(237, 241, 243);
+    letter-spacing: .1rem;
+   text-align: center;
+   animation: anim 1s .1s backwards;
+
+
+}
+.banner-button:hover{
+    background:rgba(68, 20, 240, 0.856) ;
+}
+.banner-button:active{
+    transform: translateY(.2rem);
+}
+@keyframes anim {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.banner-tips{
+    margin-left:84rem ;
+    width: 20rem;
+    height: 27rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: rgba(124, 82, 240, 0.288);
+    color: black;
+    border:none;
+    border-radius: 1rem;
+    
+    
+}
+.banner-hgroup{
+    font-size:2.5rem;
+    
+}
+.banner-list{
+    font-size: 1.4rem;
+    margin-top:1rem;
+    
+    
+}
+.banner-tips li:hover{
+    color: darkblue;
+}
+/* main */
+main{
+    background-color:#4530be7a;
+    margin-left: 8rem;
+    display: flex;
+    flex-direction: column column column;
+    justify-content: space-between;
+}
+.main-docenten, .main-verbeteren ,.main-onderwijs{
+    /* border: 2px solid black; */
+    width: 25%;
+    height:20rem;
+    margin-bottom: 1rem;
+    border-radius:1rem;
+    background-color: rgba(153, 147, 147, 0.199);
+}
+.main-hgroup{
+    font-size: 2.5rem;
+}
+.main-list{
+    font-size: 1.4rem;
+    text-decoration:none ;
+    
+
+
+}
+.main-list li:hover{
+    color: rgb(202, 193, 138);
+}
+
+/* end main */
+/* footer */
+footer{
+    background-color: rgb(0, 1, 3);
+    margin-left: 8rem;
+    display: flex;
+    flex-direction:4 column;
+    justify-content: space-between;
+
+}
+.footer-Contact,.footer-about,.footer-volgenons,.footer-klanten{
+    /* border: 2px solid black; */
+    width: 18%;
+    height:20rem;
+    margin-bottom: 1rem;
+    border-radius:1rem;
+    background-color:#000;
+    color: rgb(236, 235, 199);
+
+}
+.footer-hgroup{
+    font-size: 2.5rem;
+    margin: 1rem 0 1rem 0;
+}
+.footer-list{
+    font-size: 1.4rem;
+    text-decoration:none ;
+
+}
+
+/* end footer */
+
+
+
+    
+
+
