@@ -1,23 +1,13 @@
-html {
-    font-size: 62,5%;
-    box-sizing: border-box;
-    font-family: "Open Sans",Helvetica,Arial,sans-serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #000;
-    background-color: #fff;
-   
 
-}
 body {
+    font-family: "Open Sans",Helvetica,Arial,sans-serif;
+    font-weight: 400;
+    font-size: 17.6px;
+    color: #25167A;
     margin: 0;
     padding: 0;
-    background:linear-gradient(to top, rgba(0,0,0,.2),rgba(0,0,0,.4)),url(/Svg/hvas.svg) center no-repeat ;
+    background:url(/Svg/Untitledhvas\ \(1\).svg) center no-repeat ;
     background-size: cover;
-   
-    
-
 }
 svg{
     width: 20px;
@@ -27,7 +17,7 @@ svg{
 aside{
     width: 8rem;
     height: 100%;
-    background-color: #eee;
+    background-color: rgb(213, 201, 252);
     position: fixed;
     display: flex;
     flex-direction:column;
@@ -76,10 +66,9 @@ aside{
 }
     
 .year{
-    margin-bottom:1.5rem;
-    color:#555;
-    font-size: 1.5rem;
-    margin-top: -1.5rem;
+   
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
     
 }
 
@@ -88,13 +77,12 @@ form{
 }
 /* hide liste */
 nav {
-    /* background-color: rgb(62, 22, 107); */
-     /* margin-left:8rem ; */
+   
     position: fixed;
     left: -32rem;
 
      width:15rem;
-    background:linear-gradient(to top, rgba(0,0,0,.5),rgba(0,0,0,.7)),url(imge/4.jpg) center 
+    background:linear-gradient(to top, rgba(0, 0, 0, 0.911),rgba(73, 19, 221, 0.788)),url(imge/4.jpg) center 
     no-repeat;
     background-size: cover;
     height: 100%;
@@ -114,7 +102,6 @@ h2{
     padding: 1rem,2rem;
     background-color: rgb(22, 19, 19);
     border-radius:5rem  ;
-   
 }
 .navigation-search-btn{
     border: none;
@@ -123,54 +110,36 @@ h2{
     top: 3px;
     right:5px;
     cursor: pointer;
-    
 }
-ul{
-    /* margin-bottom:27rem; */
+ ul{
     list-style: none;
     padding: 0;
     height: 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:space-between;
+    margin-left:2.5rem;
+    
 }
 li{
     position: relative;
 }
 a{
-    color: #fff;
+    color: rgb(195, 219, 195);
     font-size: 1.6;
     font-weight: 100;
     letter-spacing: .1rem;
     text-transform: uppercase;
     text-decoration: none;
 }
-a::before {
-    content: "";
-    width: 0rem;
-    height: .1rem;
-    color: rgb(20, 19, 19);
-    position: absolute;
-    top: 1rem;
-    left:-4rem ;
-}
-a::after {
-    content: "";
-    width: 0rem;
-    height: .1rem;
-    color: rgb(20, 19, 19);
-    position: absolute;
-    top: 1rem;
-    right:-4rem ;
-}
+  
 a:hover{
     color: #531bd8;
 }
 .copyrighte{
     font-size: 1.2rem;
     margin-bottom: 1.5rem;
-
+    color: rgb(195, 219, 195);
 }
 .checkbox:checked~ nav{
     left: 8rem;
@@ -183,11 +152,9 @@ h1{
 .header-eersteoverzicht{
     margin-left: 8rem;
     height:100vh;
-     /* background:linear-gradient(to top, rgba(0,0,0,.2),rgba(0,0,0,.4)),url(imge/hva.jpg) center no-repeat; */
-    background-size: cover;
 }
 /* de brand niet klaar  */
-.brand
+.brand-logo
 {
     display: flex;
     flex-direction: column;
@@ -216,7 +183,6 @@ h1{
 }
 .banner-pragraphe{
     font-size: 2.5rem;
-    color: #000;
     animation: anim 1.5s .5s backwards;
 
 }
@@ -248,20 +214,7 @@ h1{
         opacity: 1;
     }
 }
-.banner-tips{
-    margin-left:84rem ;
-    width: 20rem;
-    height: 27rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: rgba(124, 82, 240, 0.288);
-    color: black;
-    border:none;
-    border-radius: 1rem;
-    
-    
-}
+
 .banner-hgroup{
     font-size:2.5rem;
     
@@ -275,28 +228,54 @@ h1{
 .banner-tips li:hover{
     color: darkblue;
 }
+/* article */
+ article {
+     margin-left: 8rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    margin-bottom: 10px;
+    background: rgba(255, 255, 255, 0.589);
+    padding: 1rem;
+    border-radius: 5px}
 /* main */
+/* rrow-main */
+main ul li:before {     
+    content: '';     
+    background: url(Svg/right-arrow\ \(2\).png);    
+    width: 16px;     
+    height: 16px;    
+    display: inline-block;    
+    position: relative;   
+}
+    
+/* end */
+
 main{
-    background-color:#4530be7a;
     margin-left: 8rem;
     display: flex;
-    flex-direction: column column column;
-    justify-content: space-between;
+    flex-direction: column column ;
+    justify-content:space-between;
 }
-.main-docenten, .main-verbeteren ,.main-onderwijs{
-    /* border: 2px solid black; */
-    width: 25%;
+.main-studenten,.main-docenten ,.main-onderwijs,.main-tips{
+    border: 2px solid black; 
+    width: 50%;
     height:20rem;
     margin-bottom: 1rem;
+    margin-left: .5rem;
     border-radius:1rem;
-    background-color: rgba(153, 147, 147, 0.199);
+   
 }
+
+
 .main-hgroup{
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-left: 5.5rem;
 }
 .main-list{
     font-size: 1.4rem;
     text-decoration:none ;
+    
+
+
     
 
 
@@ -306,28 +285,50 @@ main{
 }
 
 /* end main */
+/* instructie */
+.instucties{
+    height: 27rem;
+    margin-left: 9rem;
+    margin-right: 1rem;
+    margin-bottom:2rem ;
+    border: 2px rgb(8, 1, 1) solid;
+    font-weight:400;
+    
+}
+h5{
+    font-size:2rem;
+    margin: 0;
+}
+/* rrow-footer */
+footer ul li:before {     
+    content: '';     
+    background: url(Svg/arrow-right.png);    
+    width: 32px;     
+    height: 32px;    
+    display: inline-block;    
+    position: relative;   
+    top: 10px;
+}
+
 /* footer */
 footer{
-    background-color: rgb(0, 1, 3);
     margin-left: 8rem;
     display: flex;
     flex-direction:4 column;
     justify-content: space-between;
-
 }
 .footer-Contact,.footer-about,.footer-volgenons,.footer-klanten{
-    /* border: 2px solid black; */
-    width: 18%;
-    height:20rem;
+    border: 2px solid black; 
+    width: 50%;
+    height:17rem;
     margin-bottom: 1rem;
+    margin-left: .5rem;
     border-radius:1rem;
-    background-color:#000;
-    color: rgb(236, 235, 199);
-
-}
+}    
 .footer-hgroup{
-    font-size: 2.5rem;
-    margin: 1rem 0 1rem 0;
+    font-size:2rem;
+    margin: 1rem 1rem 1rem 0; 
+    margin-left:5.5rem ;
 }
 .footer-list{
     font-size: 1.4rem;
@@ -336,9 +337,211 @@ footer{
 }
 
 /* end footer */
-@media screen {
+
+/* maide max 1080 px */
+@media(max-width:1080px){
+    main{
+        
+        margin-left: 8rem;
+        display: grid;
+        grid-template-columns: repeat(2,50%) ;
+        gap: 40px ;
+    
+        
+    }
+    .main-studenten{
+    
+        grid-column: 1/2;
+       
+    }
+    .main-studenten,.main-docenten ,.main-onderwijs ,.main-tips{
+       
+        width: 70%; 
+        height:20rem;
+        margin-bottom: 1rem;
+        margin:auto ;
+    }
+    .main-hgroup{
+        margin: auto;
+    }
+
+    .banner-heading{
+       color: red;
+       margin: auto;
+    }
+    .banner-pragraphe{
+        margin: auto;
+    }
+
+     footer{
+        display: grid;
+        grid-template-columns:repeat(2,50%);
+        gap: 40px;
+    }
+
+    .footer-Contact,.footer-about,.footer-volgenons,.footer-klanten{
+        margin: auto;
+        
+        width: 50%;
+        height:20rem;
+        margin-bottom: 1rem;
+        border-radius:1rem;
+        /* background-color:rgb(224, 47, 47);  */
+        color: rgb(236, 235, 199);
+    }
+            
+
+}
+
+/* media max 800px */
+@media(max-width:800px) {
+    .header-eersteoverzicht{
+        height: 75vh;
+    }
+
+    main{
+        
+        margin-left: 8rem;
+        display: grid;
+        grid-template-columns: repeat(2,50%) ;
+        grid-gap: 1px;
+        
+        
+    
+        
+    }
+    .main-hgroup{
+        font-size: 2rem;
+        margin-left: 1rem;
+    }
+    footer{
+        display: grid;
+        grid-template-columns: repeat(2,50%);
+        grid-gap: 1px;
+        
+    }
+
+    .footer-Contact,.footer-about,.footer-volgenons,.footer-klanten{
+        width:70%;
+        height:20rem;
+        margin-bottom:1 rem;
+        border-radius:1rem;
+       
+        color: rgb(236, 235, 199);
+        margin-top: 20px;
+    }
+    
+    .banner-heading{
+        color: rgb(0, 255, 0);
+        margin: auto;
+        font-size: 2rem;
+     }
+     .banner-pragraphe{
+         font-size: 1.5rem;
+     }
+
     
 }
+/* medai 600px */
+@media(max-width:600px) {
+    .header-eersteoverzicht{
+        height: 75vh;
+    }
+    .banner-button{
+        margin-top:1.5rem ;
+    }
+    aside{
+        width: 5rem;
+       
+    }
+    .banner-heading{
+        color: rgb(238, 255, 0);
+        margin: auto;
+        font-size: 1.5rem;
+        margin-left: 1rem;
+     }
+     .banner-pragraphe{
+         font-size: 1.25rem;
+     }
+
+     .banner-button{
+        width:7rem ;
+       
+        font-size: 1rem;
+     }
+     .logo{
+         margin-left:8rem ;
+     }
+
+     main{
+        
+        margin-left: 5rem;
+        display: grid;
+        grid-template-columns: repeat(1,50%) ;
+        grid-gap: 1px;
+        justify-content:center;
+       
+        
+        
+        
+    
+        
+    }
+    .main-hgroup{
+        font-size: 1.5rem;
+        margin-left: 1rem;
+        padding: 0.25%;
+    }
+    .main-list{
+        font-size:1rem;
+    }
+    .main-studenten,.main-docenten,.main-onderwijs ,.main-tips{
+       
+        width: 10rem;
+        height: 12rem;
+        margin:0.5rem;
+        
+    }
+    ul{
+        height: 6rem;
+    }
+
+    footer{
+        margin-left: 5rem;
+        display: grid;
+        grid-template-columns: repeat(1,50%);
+        grid-gap: 1px;
+        justify-content: center;
+        
+    }
+
+    .footer-Contact,.footer-about,.footer-volgenons,.footer-klanten{
+        width:10rem;
+        height:11rem;
+        margin: 0.25rem;
+       
+        
+    }
+
+    .footer-hgroup{
+        font-size: 1.5rem;
+        margin:0rem;
+        padding: 0.25%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-list{
+        font-size: 1rem;
+    }
+
+
+
+
+
+}
+    
+
 
 
 
