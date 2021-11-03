@@ -38,15 +38,6 @@ Webtoegankelijkheid-test uitgevoerd door: {naamt}
 
 ## Inhoudsopgave
 
-  * [Samenvatting](#samenvatting)
-  * [Achtergrond bij de evaluatie](#achtergrond-bij-de-evaluatie)
-  * [Afbakening](#afbakening)
-  * [Beoordelaars](#beoordelaars)
-  * [Beoordelingsproces](#beoordelingsproces)
-  * [Testresultaten en aanbevelingen](#testresultaten-en-aanbevelingen)
-  * [Referenties](#referenties)
-  * [Bijlagen](#bijlagen)
-  * [Licentie](#licentie)
 
 ## Samenvatting
 
