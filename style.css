@@ -396,7 +396,7 @@ footer{
 /* media max 800px */
 @media(max-width:800px) {
     .header-eersteoverzicht{
-        height: 75vh;
+        height: 74vh;
     }
 
     main{
